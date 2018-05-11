@@ -1,0 +1,18 @@
+.site_menu {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  top: 0;
+
+  .container {
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu_logo {
+      margin-left: 3px;
+    }
+
+  }
+}
