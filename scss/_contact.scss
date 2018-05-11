@@ -1,0 +1,27 @@
+.site_contact {
+  background: url("../img/backgrounds/contact/blik.png") no-repeat left 31% top 22%,
+  url("../img/backgrounds/contact/blik2.png") no-repeat left 66% top 5%,
+  url("../img/backgrounds/contact/balon.png") no-repeat left 75% top 36%,
+  url("../img/backgrounds/home/home.png") repeat-x center;
+  background-size: auto, auto, auto, cover;
+
+  .container {
+    h2 {
+      color: #fff;
+      padding-top: 81px;
+    }
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .contact_social {
+      display: flex;
+      margin-top: 122px;
+      margin-bottom: 180px;
+      margin-left: -66px;
+      a {
+        margin: 0 37px;
+      }
+    }
+  }
+}

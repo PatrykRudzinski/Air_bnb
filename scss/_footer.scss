@@ -1,0 +1,21 @@
+.site_footer {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  left: -32px;
+
+  .container {
+
+    display: flex;
+    justify-content: center;
+    border-top: 3px solid rgba(#eee, 0.6);
+    p {
+      padding-top: 25px;
+      padding-bottom: 75px;
+      color: #fff;
+      font-family: 'font2', Fallback, sans-serif;
+      font-size: 18px;
+    }
+  }
+}

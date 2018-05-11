@@ -1,7 +1,60 @@
 .site_support {
-  h2 {
-    margin-top: 95px;
-    margin-left: -64px;
+
+  background:  url("../img/backgrounds/support/miasto copy.png") repeat-x left -183px bottom -63px,
+               url("../img/backgrounds/support/blik.png") no-repeat left 31% top 25%,
+               url("../img/backgrounds/support/blik2.png") no-repeat left 64% top 21%,
+               url("../img/backgrounds/support/KOTO_CS_Airbnb_Trips_GradientFull_Fallback copy 4.png")
+  repeat-x left 5px top 0px;
+  background-size: auto, auto, auto, cover;
+  padding-top: 155px;
+  padding-bottom: 187px;
+
+  .container {
+    h2 {
+      margin-top: 95px;
+      margin-left: -64px;
+    }
+
+    .support_wrapper {
+      display: flex;
+
+
+      .support_text {
+        flex-shrink: 150;
+        margin-top: 142px;
+        padding-left: 50px;
+        padding-right:75px;
+        color: #FD6955;
+
+        h3 {
+          font-family: 'font3', Fallback, sans-serif;
+          font-weight: 100;
+          font-size: 30px;
+        }
+
+        p {
+          margin-top: 36px;
+          font-family: 'font2', Fallback, sans-serif;
+          font-weight: 200;
+          font-size: 19px;
+          letter-spacing: 0.5px;
+          line-height:27px;
+
+          span {
+            font-family: 'font3', Fallback, sans-serif;
+          }
+
+          &:last-child {
+            margin-top: 30px;
+          }
+        }
+      }
+
+      .support_video {
+        margin-top: 75px;
+        margin-right: 61px;
+      }
+    }
   }
 }
 //
