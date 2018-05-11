@@ -1,0 +1,39 @@
+.site_about {
+  h2 {
+    margin-top: 88px;
+    margin-left: -62px;
+  }
+  padding-bottom: 155px;
+}
+
+.about_items {
+  display: flex;
+  margin-left: -62px;
+
+
+  div {
+    width: 33.3333%;
+    padding-top: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      font-family: 'font3', Fallback, sans-serif;
+      letter-spacing: 0.5px;
+      font-size: 28px;
+      margin-top: 40px;
+      color: #FD6955;
+    }
+
+    p {
+      font-family: 'font1', Fallback, sans-serif;
+      text-align: center;
+      padding: 0 40px;
+      letter-spacing: 0.5px;
+      font-size: 21px;
+      margin-top: 30px;
+      color: #FD6955;
+    }
+  }
+}

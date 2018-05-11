@@ -44,5 +44,15 @@ img {
   margin: 0 auto;
 }
 
-@import "_menu.scss";
-@import "_home.scss";
+h2 {
+  font-family: 'font3', Fallback, sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 47px;
+  text-align: center;
+  color: #FD6955;
+}
+
+@import "menu";
+@import "home";
+@import "about";
+@import "support";
