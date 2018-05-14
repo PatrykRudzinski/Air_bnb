@@ -34,6 +34,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: calc(7px + 0.2vw);
+}
+
 body {
   position: relative;
 }
@@ -50,8 +54,8 @@ img {
 
 h2 {
   font-family: 'font3', Fallback, sans-serif;
-  letter-spacing: 0.5px;
-  font-size: 47px;
+  letter-spacing: 0.05rem;
+  font-size: 4.7rem;
   text-align: center;
   color: #FD6955;
 }
