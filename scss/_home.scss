@@ -1,8 +1,9 @@
 .site_home {
   background: url("../img/backgrounds/home/chmury.png") repeat-x center bottom -110px,
-                    url("../img/backgrounds/home/miasto.png") repeat-x left -271px bottom -35px,
+                    url("../img/backgrounds/home/miasto.png") repeat-x center bottom -35px,
                     url("../img/backgrounds/home/home.png") no-repeat center;
   background-size: auto, auto, cover;
+
   .container {
     padding-top: 146px;
     padding-bottom: 30px;
@@ -36,7 +37,7 @@
         font-family: 'font2', Fallback, sans-serif;
         font-size: 1.8rem;
         letter-spacing: 0.5px;
-        line-height: 22px;
+        line-height:22px;
         text-align: justify;
       }
 
