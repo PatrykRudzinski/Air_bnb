@@ -1,11 +1,9 @@
 .site_support {
-
-  background:  url("../img/backgrounds/support/miasto copy.png") repeat-x left -183px bottom -63px,
+  background:  url("../img/backgrounds/support/miasto copy.png") repeat-x center bottom -79px,
                url("../img/backgrounds/support/blik.png") no-repeat left 31% top 25%,
                url("../img/backgrounds/support/blik2.png") no-repeat left 64% top 21%,
-               url("../img/backgrounds/support/KOTO_CS_Airbnb_Trips_GradientFull_Fallback copy 4.png")
-  repeat-x left 5px top 0px;
-  background-size: auto, auto, auto, cover;
+               url("../img/backgrounds/support/tlo.png") repeat-x center top;
+  //background-size: auto, auto, auto, auto;
   padding-top: 155px;
   padding-bottom: 187px;
 
@@ -57,17 +55,3 @@
     }
   }
 }
-//
-//div {
-//  background-image: url(https://placeimg.com/640/480/any);
-//  margin: 20px auto;
-//  display: block;
-//  width: 100%;
-//  height: 400px;
-//  -webkit-mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
-//  mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
-//  -webkit-mask-position: center center;
-//  mask-position: center center;
-//  -webkit-mask-repeat: no-repeat;
-//  mask-repeat: no-repeat;
-//}

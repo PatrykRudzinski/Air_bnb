@@ -1,9 +1,27 @@
 .site_contact {
+  position: relative;
   background: url("../img/backgrounds/contact/blik.png") no-repeat left 31% top 22%,
   url("../img/backgrounds/contact/blik2.png") no-repeat left 66% top 5%,
   url("../img/backgrounds/contact/balon.png") no-repeat left 75% top 36%,
-  url("../img/backgrounds/home/home.png") repeat-x center;
-  background-size: auto, auto, auto, cover;
+  linear-gradient(90deg, rgb(255, 133, 55) 0%, rgb(255, 91, 94) 100%);
+  //background-size: auto, auto, auto, auto;
+
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -178px;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(90deg, rgb(255, 133, 55) 0%, rgb(255, 91, 94) 100%);
+    mask-image: url('../img/backgrounds/contact/bable.png');
+    mask-repeat: repeat-x;
+    mask-position: bottom;
+    mask-size: contain;
+    z-index: 100;
+  }
+
 
   .container {
     h2 {
@@ -25,3 +43,17 @@
     }
   }
 }
+//
+//div {
+//  background-image: url(https://placeimg.com/640/480/any);
+//  margin: 20px auto;
+//  display: block;
+//  width: 100%;
+//  height: 400px;
+//  -webkit-mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+//  mask-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/mask-image/mask-image.png);
+//  -webkit-mask-position: center center;
+//  mask-position: center center;
+//  -webkit-mask-repeat: no-repeat;
+//  mask-repeat: no-repeat;
+//}
