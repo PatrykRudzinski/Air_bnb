@@ -8,7 +8,7 @@
 
   @media (max-width: 990px) {
     background:  url("../img/backgrounds/support/_supp_miasto.png") no-repeat center bottom -35px,
-      url("../img/backgrounds/support/blik.png") no-repeat left 18% top 35%,
+      url("../img/backgrounds/support/blik.png") no-repeat left 10% top 25%,
       url("../img/backgrounds/support/blik2.png") no-repeat right 23% top 28%,
       url("../img/backgrounds/support/_supp.png") repeat-x center top;
     background-size: auto, auto, auto, cover;
@@ -30,7 +30,28 @@
       @media (max-width: 990px) {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+
+        //Przeniesiony text
+        p {
+          margin-top: 36px;
+          font-family: 'font2', Fallback, sans-serif;
+          font-weight: 200;
+          font-size: 1.9rem;
+          letter-spacing: 0.05rem;
+          line-height:2.7rem;
+          color: #FD6955;
+
+          @media (max-width: 750px) {
+            font-size: 2.6rem;
+          }
+        }
+
+        span {
+          font-family: 'font3', Fallback, sans-serif;
+        }
       }
+
       .support_text {
         flex-shrink: 150;
         margin-top: 142px;
@@ -44,10 +65,18 @@
           padding: 0 10px;
         }
 
+        @media (max-width: 750px) {
+          margin-top: 72px;
+        }
+
         h3 {
           font-family: 'font3', Fallback, sans-serif;
           font-weight: 100;
           font-size: 3rem;
+
+          @media (max-width: 750px) {
+            font-size: 3.4rem;
+          }
         }
 
         p {
@@ -57,6 +86,10 @@
           font-size: 1.9rem;
           letter-spacing: 0.05rem;
           line-height:2.7rem;
+
+          @media (max-width: 750px) {
+            font-size: 2.6rem;
+          }
 
           span {
             font-family: 'font3', Fallback, sans-serif;

@@ -1,23 +1,35 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    // variables
     const hamburger = document.querySelector('#hamburger');
     const nav = document.querySelector('#nav');
     const menuLink = document.querySelectorAll('#nav a');
+    const txt = document.querySelector('#support_text-moving');
+    const suppWrapper = document.querySelector('#support_wrapper');
+    const suppTxt = document.querySelector('#support_text');
 
-    hamburger.addEventListener('click', function () {
-       hamburger.classList.toggle('hamburger-open');
-       nav.classList.toggle('nav-collapsed');
-    });
+    // move text under or over ipad
+    const moveTxt = ()=> {
+        window.innerWidth <= 990 ? suppWrapper.appendChild(txt) : suppTxt.appendChild(txt);
+    };
+    // collapse and show menu
+    const menuSwitch = ()=> {
+        hamburger.classList.toggle('hamburger-open');
+        nav.classList.toggle('nav-collapsed');
+    };
 
 
+
+    // collapse and show menu on hamburger click
+    hamburger.addEventListener('click', menuSwitch);
+
+    // close menu on link click
     [...menuLink].forEach(function (el){
-        el.addEventListener('click', function () {
-            hamburger.classList.remove('hamburger-open');
-            nav.classList.add('nav-collapsed');
-
-        })
+        el.addEventListener('click', menuSwitch)
     });
 
+    // move text under or over ipad on window resize
+    window.addEventListener('resize', moveTxt);
 
 
 });

@@ -9,6 +9,11 @@
     display: flex;
     justify-content: center;
     border-top: 3px solid rgba(#eee, 0.6);
+
+    @media (max-width: 1250px) {
+      margin: 0 5%;
+    }
+
     p {
       padding-top: 25px;
       padding-bottom: 75px;
