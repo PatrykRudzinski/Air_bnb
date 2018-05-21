@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const suppWrapper = document.querySelector('#support_wrapper');
     const suppTxt = document.querySelector('#support_text');
 
-    // move text under or over ipad
+    // move text under or over ipad func
     const moveTxt = ()=> {
         window.innerWidth <= 990 ? suppWrapper.appendChild(txt) : suppTxt.appendChild(txt);
     };
-    // collapse and show menu
+    // collapse and show menu func
     const menuSwitch = ()=> {
         hamburger.classList.toggle('hamburger-open');
         nav.classList.toggle('nav-collapsed');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // move text under or over ipad on load
-    moveTxt()
+    moveTxt();
 
     // move text under or over ipad on window resize
     window.addEventListener('resize', moveTxt);
