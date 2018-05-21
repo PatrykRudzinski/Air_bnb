@@ -4,20 +4,69 @@
   margin: 0 auto;
   top: 0;
 
-
   .container {
     height: 95px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .menu_logo {
       margin-left: 5px;
+
+      @media (max-width: 1270px) {
+        margin-left: 20px;
+      }
+    }
+
+    .hamburger_nav {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      right: 25px;
+      top: 0;
+      height: 65px;
+      width: 70px;
+      background-color: #fff;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      z-index: 3;
+
+      span {
+        background-color: #FB8044;
+        width: 60%;
+        height: 8%;
+        border-radius: 1px;
+        transition: 0.3s transform;
+      }
+
+      span:first-child {
+        margin-top: 16px;
+      }
+
+      span:last-child {
+        margin-bottom: 14px;
+      }
+
+      @media (min-width: 750px) {
+        display: none;
+      }
     }
 
     .menu_nav {
       width: 50%;
       margin-right: 28px;
+      transition: .5s all;
+
+      @media (max-width: 750px) {
+        margin-right: 0;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+      }
 
       ul {
         list-style: none;
@@ -40,7 +89,50 @@
             color: #fff;
           }
         }
+
+        @media (max-width: 750px) {
+          flex-direction: column;
+          background-color: #fff;
+          padding-top: 100px;
+          border-bottom-left-radius: 10px;
+          width: 100%;
+          min-height: 70vh;
+          box-shadow: -2px 1px 10px 1px rgba(#111, 0.3);
+
+          li {
+            margin: 10px 20px;
+            a {
+              font-size: 2.8rem;
+              color: #FB8044;
+            }
+          }
+          li:last-child {
+            margin-bottom: 30px;
+          }
+        }
       }
     }
   }
+
+  .hamburger-open {
+
+    span {
+      transform: scale(0);
+      transform-origin: center;
+    }
+    span:first-child {
+      transform: translateY(10px) rotate(135deg);
+    }
+    span:last-child {
+      transform: translateY(-20px) rotate(-135deg);
+    }
+  }
+
+  @media (max-width: 750px) {
+    .nav-collapsed {
+      transform: translate(110%, -20%);
+
+    }
+  }
 }
+

@@ -3,26 +3,46 @@
                url("../img/backgrounds/support/blik.png") no-repeat left 31% top 25%,
                url("../img/backgrounds/support/blik2.png") no-repeat left 64% top 21%,
                url("../img/backgrounds/support/tlo.png") repeat-x center top;
-  //background-size: auto, auto, auto, auto;
   padding-top: 155px;
   padding-bottom: 187px;
 
+  @media (max-width: 990px) {
+    background:  url("../img/backgrounds/support/_supp_miasto.png") no-repeat center bottom -35px,
+      url("../img/backgrounds/support/blik.png") no-repeat left 18% top 35%,
+      url("../img/backgrounds/support/blik2.png") no-repeat right 23% top 28%,
+      url("../img/backgrounds/support/_supp.png") repeat-x center top;
+    background-size: auto, auto, auto, cover;
+  }
+
   .container {
     h2 {
-      margin-top: 95px;
-      margin-left: -64px;
+      margin-top: 145px;
+      padding: 0 10px;
+
+      @media (max-width: 990px) {
+          margin-top: calc(170px + 10vw);
+      }
     }
 
     .support_wrapper {
       display: flex;
 
-
+      @media (max-width: 990px) {
+        flex-direction: column;
+        align-items: center;
+      }
       .support_text {
         flex-shrink: 150;
         margin-top: 142px;
         padding-left: 50px;
         padding-right:75px;
         color: #FD6955;
+
+        @media (max-width: 990px) {
+          text-align: center;
+          width: 80%;
+          padding: 0 10px;
+        }
 
         h3 {
           font-family: 'font3', Fallback, sans-serif;
@@ -51,6 +71,15 @@
       .support_video {
         margin-top: 75px;
         margin-right: 61px;
+
+        @media (max-width: 990px) {
+          margin-right: 0;
+
+          img {
+            width: 95%;
+            margin: 0 auto;
+          }
+        }
       }
     }
   }

@@ -1,11 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const menu = document.querySelector('#menu');
-    const home = document.querySelector('#home');
-    
-    document.addEventListener('scroll', function () {
-        const homeHeight = home.clientHeight;
-        //console.log(window.scrollY);
+    const hamburger = document.querySelector('#hamburger');
+    const nav = document.querySelector('#nav');
+    const menuLink = document.querySelectorAll('#nav a');
+
+    hamburger.addEventListener('click', function () {
+       hamburger.classList.toggle('hamburger-open');
+       nav.classList.toggle('nav-collapsed');
     });
+
+
+    [...menuLink].forEach(function (el){
+        el.addEventListener('click', function () {
+            hamburger.classList.remove('hamburger-open');
+            nav.classList.add('nav-collapsed');
+
+        })
+    });
+
+
 
 });
