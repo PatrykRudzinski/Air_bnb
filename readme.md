@@ -1,4 +1,3 @@
-* poprawic png z chmurami
-* wersja mobilna
+# [Air bnb](https://patrykrudzinski.github.io/Air_bnb/)
 
-[Live](https://patrykrudzinski.github.io/Air_bnb/)
+## site from template
