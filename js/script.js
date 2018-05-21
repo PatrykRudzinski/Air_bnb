@@ -28,8 +28,14 @@ document.addEventListener('DOMContentLoaded', function () {
         el.addEventListener('click', menuSwitch)
     });
 
+    // move text under or over ipad on load
+    moveTxt()
+
     // move text under or over ipad on window resize
     window.addEventListener('resize', moveTxt);
+
+
+
 
 
 });
